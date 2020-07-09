@@ -1,6 +1,6 @@
 package nicelee.bilibili.util;
 
-import java.util.HashMap;
+import java.util.*;
 
 public class HttpHeaders {
 	HashMap<String, String> headerMap = new HashMap<String, String>();
@@ -86,13 +86,22 @@ public class HttpHeaders {
 	/**
 	 * 该Header配置用于app版权视频下载
 	 */
-	static HashMap<String, String> appHeaderMap;
+	static List<String> biliAppDownHeadersList = new ArrayList<>();
 
-	public static HashMap<String, String> getBiliAppDownHeaders() {
-		if (appHeaderMap == null) {
-			appHeaderMap = new HashMap<>();
-			appHeaderMap.put("User-Agent", "Bilibili Freedoooooom/MarkII");
+	static {
+		for (int i = 0; i < 1000; i++) {
+			if (i == 0) {
+				biliAppDownHeadersList.add("Bilibili Freedoooooom/MarkII");
+			} else {
+				biliAppDownHeadersList.add("Bilibili Freedoooooom/MarkII" + i);
+			}
 		}
+	}
+	public static HashMap<String, String> getBiliAppDownHeaders() {
+		Random rd = new Random();
+		int index = rd.nextInt(1000);
+		HashMap<String, String> appHeaderMap = new HashMap<>();
+		appHeaderMap.put("User-Agent", biliAppDownHeadersList.get(index));
 		return appHeaderMap;
 	}
 

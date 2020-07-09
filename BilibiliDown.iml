@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="EclipseModuleManager">
-    <libelement value="jar://$MODULE_DIR$/libs/core-3.3.3.jar!/" />
+    <libelement value="file://D:/Workspace/javaweb-springboot/BilibiliDown/libs/core-3.3.3.jar" />
     <src_description expected_position="1">
       <src_folder value="file://$MODULE_DIR$/src" expected_position="1" />
     </src_description>
@@ -26,7 +26,7 @@
     <orderEntry type="module-library">
       <library name="core-3.3.3.jar">
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/libs/core-3.3.3.jar!/" />
+          <root url="file://D:/Workspace/javaweb-springboot/BilibiliDown/libs/core-3.3.3.jar" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
