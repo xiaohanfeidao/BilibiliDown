@@ -165,10 +165,6 @@ public class HttpRequestUtil {
 			}
 			// 获取所有响应头字段
 			Map<String, List<String>> map = conn.getHeaderFields();
-			// 遍历所有的响应头字段
-//			for (String key : map.keySet()) {
-//				System.out.println(key + "--->" + map.get(key));
-//			}
 			System.out.printf("文件大小: %s 字节.\r\n", map.get("Content-Length"));
 
 			totalFileSize = offset + Long.parseUnsignedLong(map.get("Content-Length").get(0));
