@@ -89,7 +89,7 @@ public class HttpHeaders {
 	static List<String> biliAppDownHeadersList = new ArrayList<>();
 
 	static {
-		biliAppDownHeadersList.add("Bilibili Freedoooooom/MarkII");
+		biliAppDownHeadersList.add("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 SE 2.X MetaSr 1.0");
 		biliAppDownHeadersList.add("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36 OPR/26.0.1656.60");
 		biliAppDownHeadersList.add("Opera/8.0 (Windows NT 5.1; U; en)");
 		biliAppDownHeadersList.add("Mozilla/5.0 (Windows NT 5.1; U; en; rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.50");
