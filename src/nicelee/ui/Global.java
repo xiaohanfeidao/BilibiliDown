@@ -58,7 +58,7 @@ public class Global {
 	public static TabIndex index; // 主页界面
 
 	// 信息查询相关
-	public static int pageSize = 5; // 当有分页时，每页显示个数
+	public static int pageSize = 1000; // 当有分页时，每页显示个数
 	public static String pageDisplay; // 当有分页时，每页显示个数
 	
 	// 临时文件相关
