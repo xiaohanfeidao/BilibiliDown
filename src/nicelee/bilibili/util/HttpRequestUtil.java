@@ -157,6 +157,13 @@ public class HttpRequestUtil {
 
 			if (conn.getResponseCode() == 403) {
 				Logger.println("403被拒，尝试更换Headers");
+				try {
+					System.out.println("休眠2小时");
+					Thread.sleep(7200000);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+
 				conn.disconnect();
 				headers = HttpHeaders.getBiliAppDownHeaders();
 				offset = modifyHeaderMapByDownloaded(headers, raf, fileDownloadPart, offset);
